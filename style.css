@@ -1,0 +1,172 @@
+html {
+    margin: 0 auto;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+
+    background-image: url(Images/sky.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+    margin: 0;
+}
+
+.mensagem_título {
+    border: solid black;
+    border-radius: 80px;
+    background-color: black;
+    opacity: 0.5;
+
+    display: block;
+    position: relative;
+
+    margin: auto;
+    width: fit-content;
+    width: -moz-fit-content;
+    height: fit-content;
+    height: -moz-fit-content;
+
+    font-size: 32pt;
+    font-weight: bolder;
+    color: tomato;
+    text-shadow: 3px 3px 8px black;
+
+    margin-top: 100px;
+    padding: 40px;
+}
+
+
+
+
+
+.chat {
+    visibility: hidden;
+
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+    padding: 6px;
+    box-shadow: 1px 1px 6px black;
+
+    width: 300px;
+    height: 400px;
+
+    background-color: cornflowerblue;
+    border: 1px solid rgb(71, 126, 226);
+    border-radius: 8px;
+}
+    #inner_border {
+        border: 1px solid rgb(71, 126, 226);
+        display: block;
+
+        position: relative;
+        margin: auto;
+        margin-top: -4px;
+
+        width: 99%;
+        height: 90%;
+
+        background-image: linear-gradient(to left,white,rgb(212, 245, 241));
+        border-radius: 6px;
+        overflow: hidden;
+    }
+
+#chat_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    height: fit-content;
+    height: -moz-fit-content;
+    padding: 0px 2px 0px 2px;
+}
+    #título {
+        display: inline-block;
+        position: relative;
+        color: white;
+        margin: 0;
+    }
+    #fechar_chat {
+        display: inline-block;
+        position: relative;
+    }
+        #fechar_chat button {
+            padding: 8px 12px 8px 12px;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            background-color: cornflowerblue;
+            font-weight: bolder;
+            font-size: 12pt;
+            color: rgb(43, 41, 41);
+
+            transition: 0.3s;
+        }
+        #fechar_chat button:hover {
+            background-color: rgb(144, 177, 240);
+        }
+
+#chat_area {
+    background-image: linear-gradient(to left,white,rgb(212, 245, 241));
+    display: grid;
+    grid-template-columns: 1fr;
+
+    position: relative;
+    grid-row: span 3;
+    border-radius: 6px;
+
+    overflow-y: auto;
+    
+}
+#text_box {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 90px;
+
+    align-items: center;
+    justify-content: space-around;
+    background-image: linear-gradient(to left,white,rgb(220, 243, 240));
+}
+    #text_box input[type="text"] {
+        height: 60%;
+        width: 90%;
+        padding: 10px;
+
+        align-items: center;
+
+        border-style: groove;
+        border-radius: 6px;
+        box-shadow: none;
+    }
+    #text_box #enviar {
+        position: absolute;
+        right: 20px;
+
+        border: none;
+        text-decoration: none;
+        padding: 14px 10px 14px 10px;
+
+        background-color: cornflowerblue;
+        color: white;
+        border-radius: 8px;
+        box-shadow: 1px 1px 4px black;
+
+        transition: 0.3s;
+    }
+        #text_box #enviar:hover {
+            background-color: rgb(144, 177, 240);
+        }
