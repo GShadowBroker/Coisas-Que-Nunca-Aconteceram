@@ -131,6 +131,7 @@ function sendMessage() {
     } else {
         alert(`Você iludidamente disse: ${document.querySelector('#texto').value}`);
     }
+    document.querySelector('#texto').value = "";
 }
 /*PRACTICE*/
 
