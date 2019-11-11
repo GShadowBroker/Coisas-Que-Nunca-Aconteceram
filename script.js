@@ -126,7 +126,7 @@ input.addEventListener('keyup', function(event) {
 });
 
 function sendMessage() {
-    if (document.querySelector('#texto').value == '') {
+    if (document.querySelector('#texto').value == '' || document.querySelector('#texto').value == 'Digite sua mensagem aqui') {
         alert(`Você iludidamente disse: porra nenhuma`);
     } else {
         alert(`Você iludidamente disse: ${document.querySelector('#texto').value}`);
